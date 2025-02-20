@@ -1,0 +1,71 @@
+# 📦 Gradle (pliki builda)
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ⚙️ JavaFX SDK (jeśli masz lokalną wersję)
+javafx-sdk*/
+javapackager.log
+
+# 📄 Spring Boot - konfiguracja aplikacji (wrażliwe dane)
+.env
+*.env
+*.properties
+*.yml
+!src/main/resources/application.yml   # Jeśli chcesz śledzić bazowy plik konfiguracyjny
+
+# 🔑 Spring Boot - dane poufne
+src/main/resources/secrets/
+src/main/resources/*.key
+src/main/resources/*.pem
+src/main/resources/*.p12
+src/main/resources/*.jks
+
+# 🔥 Logi i cache Spring Boot
+logs/
+*.log
+*.stacktrace
+*.hprof
+
+# 🗃️ Bazy danych H2, SQLite (lokalne pliki bazy danych)
+*.db
+*.mv.db
+*.h2.db
+*.sqlite
+
+# 🏗 Maven (jeśli przypadkiem go używasz)
+.mvn/
+target/
+
+# 💡 IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# 💡 IDE - Eclipse/STS
+.classpath
+.project
+.settings/
+.sts4-cache
+bin/
+
+# 💡 IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# 💡 IDE - VS Code
+.vscode/
+
+# 🐳 Docker (jeśli używasz)
+docker-compose.override.yml
+
+# 🎭 Testy (Jeśli używasz Jacoco do testowania kodu)
+jacoco.exec
+
+# 📜 Swagger (dokumentacja API)
+src/main/resources/static/swagger-ui/
